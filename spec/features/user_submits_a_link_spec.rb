@@ -29,8 +29,8 @@ context "the form is invalid" do
         
         click_on "Submit!"
 
-        puts "======= PAGE =======, #{page.has_content?}"
+        # puts "======= PAGE =======, #{page.has_content?}"
 
-        expect(page).to have_content "url can't be blank"
+        expect(page).to have_content "\nUrl can't be blank\n"
     end    
 end
